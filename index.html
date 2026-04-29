@@ -3,26 +3,381 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alfiya Baig</title>
+<title>Alfiya Baig — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
 </head>
+<body>
 
-<body class="landing">
+<div id="cur"></div>
+<div id="cur-ring"></div>
 
-<nav>
-    <h2>My portfolio</h2>
+<!-- ════ LANDING ════ -->
+<section id="landing">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+
+  <div class="land-bar">
+    <a href="#landing" class="land-logo">My Portfolio</a>
+    <div class="land-status"><span class="sdot"></span> Open to opportunities</div>
+  </div>
+
+  <div class="land-inner">
+    <div class="hero-eyebrow">Software Engineer &amp; Full-Stack Developer</div>
+
+    <h1 class="hero-name">
+      Alfiya<br><span class="it">Baig.</span>
+    </h1>
+
+    <p class="hero-intro">
+      A <strong>Software Engineer and Full-Stack Developer</strong> with a strong foundation in computer science, real-world internship experience, and a passion for building things that actually work. I design and develop web applications, work with cloud systems, explore <strong>AI and machine learning</strong>, and care deeply about <strong>cybersecurity</strong>. Currently pursuing my BCA at Seshadripuram College, Bengaluru — with a CGPA of 8.88 and growing.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#about" class="cta-fill">Explore Portfolio ↓</a>
+      <a href="#contact" class="cta-line">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="land-bottom">
+    <div class="lb-tags">
+      <span class="lb-tag">BCA · Seshadripuram College</span>
+      <span class="lb-tag">CGPA 8.88</span>
+      <span class="lb-tag">Bengaluru, IN</span>
+    </div>
+    <div class="scroll-cue"><div class="sc-line"></div> Scroll</div>
+  </div>
+</section>
+
+<!-- ════ NAV ════ -->
+<nav id="nav">
+  <a href="#landing" class="nav-logo">Alfiya <em>Baig</em></a>
+  <ul class="nav-ul">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<section class="hero">
-    <h1>Hi, I'm Alfiya Baig </h1>
-    <p>Software Engineer | Full Stack Developer | Cloud, AI & Cybersecurity Enthusiast</p>
+<div class="page">
 
-    <div class="buttons">
-        <a href="about.html">About Me</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
+<!-- ── ABOUT ── -->
+<div class="wrap" id="about">
+  <div class="sh">
+    <div><div class="sh-tag">About Me</div><h2 class="sh-title rv">A developer<br>with <em>purpose.</em></h2></div>
+    <div class="sh-n rv d1">01</div>
+  </div>
+  <div class="about-grid">
+    <div class="rv d1">
+      <div class="about-text">
+        <p>I am a <strong>BCA student at Seshadripuram College, Bengaluru</strong>, maintaining a CGPA of 8.88, with a strong academic foundation in computer science and a practical approach to software engineering.</p>
+        <p>My experience spans <strong>full-stack development, RESTful API design, real-time systems, and AI-integrated applications</strong>. I have built and deployed projects independently — from a collaborative browser-based workspace to an AI-powered climate data chatbot — each shaped by a commitment to quality and real-world utility.</p>
+        <p>Beyond development, I hold a deep interest in <strong>cybersecurity and AI ethics</strong>, reflected in my published research on deepfake detection. I approach every problem with the same mindset: understand it thoroughly, engineer a clean solution, and ship something that genuinely works.</p>
+        <p>I am currently seeking <strong>internship and collaborative opportunities</strong> where I can contribute meaningfully, grow as an engineer, and work alongside people who care about building well.</p>
+      </div>
+      <div class="pill-row">
+        <span class="pill">💻 Full-Stack Development</span>
+        <span class="pill">☁️ Cloud Computing</span>
+        <span class="pill">🤖 AI &amp; ML</span>
+        <span class="pill">🔐 Cybersecurity</span>
+        <span class="pill">🔬 Research</span>
+      </div>
+      <div class="soc">
+        <a href="https://www.linkedin.com/in/alfiya-baig-411406347" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/alfiyabaig29" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:alfiyabaig05@gmail.com">✉ Email</a>
+      </div>
     </div>
-</section>
+    <div class="rv d2">
+      <div class="stat-grid">
+        <div class="sc"><div class="sc-n c1">8.88</div><div class="sc-l">CGPA — BCA</div></div>
+        <div class="sc"><div class="sc-n c2">3+</div><div class="sc-l">Projects Deployed</div></div>
+        <div class="sc"><div class="sc-n c3">1</div><div class="sc-l">Research Paper</div></div>
+        <div class="sc"><div class="sc-n c4">7+</div><div class="sc-l">Languages &amp; Frameworks</div></div>
+      </div>
+      <div class="info-list">
+        <div class="info-item"><div class="ii-ico">🎓</div><div><div class="ii-t">Seshadripuram College, Bengaluru</div><div class="ii-s">Bachelor of Computer Applications</div></div></div>
+        <div class="info-item"><div class="ii-ico">⚡</div><div><div class="ii-t">HostUp Cloud Technologies</div><div class="ii-s">Software Developer Intern · 2025</div></div></div>
+        <div class="info-item"><div class="ii-ico">📄</div><div><div class="ii-t">Published Researcher</div><div class="ii-s">Deepfake Technology — Detection &amp; Prevention</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hr"><div class="hr-line"></div></div>
+
+<!-- ── EXPERIENCE ── -->
+<div class="wrap" id="experience">
+  <div class="sh">
+    <div><div class="sh-tag">Work Experience</div><h2 class="sh-title rv">Where I've<br><em>contributed.</em></h2></div>
+    <div class="sh-n rv d1">02</div>
+  </div>
+  <div class="exp-list">
+    <div class="exp rv d1">
+      <div class="exp-date">Aug 2025 –<br>Nov 2025<br><br>On-site<br>Bengaluru</div>
+      <div>
+        <span class="exp-badge">Internship</span>
+        <div class="exp-title">Software Developer Intern</div>
+        <div class="exp-co">HostUp Cloud Technologies Pvt. Ltd</div>
+        <p class="exp-desc">I completed my internship as a Software Developer Intern, where I gained hands-on experience in real-world project environments. During this period, I worked on tasks such as UI testing, developing and improving web pages like the Customers module, and managing code contributions through pull requests. I was also involved in system-level activities, including cable testing and QR code verification, which gave me exposure to both software and hardware aspects. Additionally, I enhanced my understanding of databases and API integrations and practiced tools like Prisma and MongoDB. I contributed to documentation by writing README files and actively participated in technical presentations and learning sessions. This experience helped me strengthen my skills in debugging, collaboration, version control, and professional communication, while giving me a clear understanding of software development workflows.</p>
+        <div class="exp-tags">
+          <span class="etag">UI Testing</span><span class="etag">React.js</span>
+          <span class="etag">Next.js</span><span class="etag">Node.js</span>
+          <span class="etag">MongoDB</span><span class="etag">Prisma</span>
+          <span class="etag">REST APIs</span><span class="etag">Pull Requests</span>
+          <span class="etag">GitHub</span><span class="etag">Documentation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hr"><div class="hr-line"></div></div>
+
+<!-- ── SKILLS — bento ── -->
+<div class="wrap" id="skills">
+  <div class="sh">
+    <div><div class="sh-tag">Skills</div><h2 class="sh-title rv">Technical<br><em>expertise.</em></h2></div>
+    <div class="sh-n rv d1">03</div>
+  </div>
+
+  <div class="skills-bento rv d1">
+
+    <div class="sk-card a1">
+      <span class="sk-ico2">⚡</span>
+      <div class="sk-nm2">Programming Languages</div>
+      <div class="sk-pills2">
+        <span class="skp2">C</span><span class="skp2">C++</span><span class="skp2">Java</span>
+        <span class="skp2">Python</span><span class="skp2">JavaScript</span>
+        <span class="skp2">HTML</span><span class="skp2">CSS</span>
+      </div>
+    </div>
+
+    <div class="sk-card a2">
+      <span class="sk-ico2">🔧</span>
+      <div class="sk-nm2">Frameworks &amp; Libraries</div>
+      <div class="sk-pills2">
+        <span class="skp2">React.js</span><span class="skp2">Next.js</span>
+        <span class="skp2">Node.js</span><span class="skp2">Express.js</span>
+        <span class="skp2">Flask</span><span class="skp2">Python Libraries</span>
+      </div>
+    </div>
+
+    <div class="sk-card a3">
+      <span class="sk-ico2">🗄️</span>
+      <div class="sk-nm2">Backend &amp; Database</div>
+      <div class="sk-pills2">
+        <span class="skp2">SQL</span><span class="skp2">MongoDB</span>
+        <span class="skp2">Prisma</span><span class="skp2">REST APIs</span>
+        <span class="skp2">CRUD</span><span class="skp2">DBMS</span>
+        <span class="skp2">JSON Storage</span><span class="skp2">Postman</span>
+      </div>
+    </div>
+
+    <div class="sk-card a4">
+      <span class="sk-ico2">☁️</span>
+      <div class="sk-nm2">Cloud &amp; DevOps</div>
+      <div class="sk-pills2">
+        <span class="skp2">Cloud Hosting</span>
+        <span class="skp2">Cloud Architecture</span>
+        <span class="skp2">Git</span><span class="skp2">GitHub</span>
+        <span class="skp2">VS Code</span>
+      </div>
+    </div>
+
+    <div class="sk-card a5">
+      <span class="sk-ico2">🔐</span>
+      <div class="sk-nm2">Cybersecurity &amp; AI</div>
+      <div class="sk-pills2">
+        <span class="skp2">Deepfake Detection</span>
+        <span class="skp2">GANs</span>
+        <span class="skp2">Network Security</span>
+        <span class="skp2">AI / ML Concepts</span>
+        <span class="skp2">Threat Analysis</span>
+      </div>
+    </div>
+
+    <div class="sk-card a6">
+      <span class="sk-ico2">🧠</span>
+      <div class="sk-nm2">CS Fundamentals</div>
+      <div class="sk-pills2">
+        <span class="skp2">OOP</span><span class="skp2">DSA</span>
+        <span class="skp2">Computer Networks</span>
+        <span class="skp2">OS Concepts</span>
+        <span class="skp2">API Design</span>
+        <span class="skp2">System Design</span>
+      </div>
+    </div>
+
+    <div class="sk-card a7 wide3">
+      <span class="sk-ico2">💡</span>
+      <div class="sk-nm2">Soft Skills &amp; Interests</div>
+      <div class="sk-pills2">
+        <span class="skp2">Critical Thinking</span>
+        <span class="skp2">Problem Solving</span>
+        <span class="skp2">Teamwork</span>
+        <span class="skp2">Adaptability</span>
+        <span class="skp2">Communication</span>
+        <span class="skp2">Version Control</span>
+        <span class="skp2">Debugging</span>
+        <span class="skp2">Documentation</span>
+        <span class="skp2">Technical Presentations</span>
+        <span class="skp2">Full-Stack Development</span>
+        <span class="skp2">Cloud Computing</span>
+        <span class="skp2">Cybersecurity</span>
+        <span class="skp2">AI &amp; Machine Learning</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="hr"><div class="hr-line"></div></div>
+
+<!-- ── PROJECTS ── -->
+<div class="wrap" id="projects">
+  <div class="sh">
+    <div><div class="sh-tag">Projects</div><h2 class="sh-title rv">Selected<br><em>work.</em></h2></div>
+    <div class="sh-n rv d1">04</div>
+  </div>
+  <div class="proj-grid">
+
+    <div class="proj-card p1 rv d1">
+      <div class="proj-num">01</div>
+      <span class="proj-badge pb-ai">AI / Data Analytics</span>
+      <div class="proj-title">ClimateIQ — AI-Powered Climate Change Analyzer Chatbot</div>
+      <p class="proj-desc">A Flask-based intelligent chatbot enabling users to query real climate datasets in natural language. Integrates a conversational AI engine, data analysis backend, and dynamic visualization to deliver insights on global temperature trends. Features user authentication, JSON-based data storage, and an interactive web interface.</p>
+      <div class="proj-techs">
+        <span class="ptag">Flask</span><span class="ptag">Python</span><span class="ptag">NLP</span>
+        <span class="ptag">Plotly</span><span class="ptag">Data Analytics</span><span class="ptag">Auth System</span>
+      </div>
+    </div>
+
+    <div class="proj-card p2 rv d2">
+      <div class="proj-num">02</div>
+      <span class="proj-badge pb-col">Real-Time Collaboration</span>
+      <div class="proj-title">Mossworth — Browser-Based Collaborative Workspace</div>
+      <p class="proj-desc">A fully browser-native collaboration platform combining a rich text editor, Kanban board, live whiteboard, and in-browser code execution in one environment. Real-time multi-user sync via BroadcastChannel API, architected WebSocket-ready for production. No installs or sign-up required.</p>
+      <div class="proj-techs">
+        <span class="ptag">JavaScript</span><span class="ptag">BroadcastChannel API</span>
+        <span class="ptag">WebSocket-ready</span><span class="ptag">Kanban</span>
+        <span class="ptag">Live Whiteboard</span><span class="ptag">Code Execution</span>
+      </div>
+    </div>
+
+    <div class="proj-card p3 full rv d3">
+      <div class="proj-num">03</div>
+      <span class="proj-badge pb-full">Full-Stack · REST API</span>
+      <div class="proj-title">Library Management System — Full-Stack REST API Application</div>
+      <p class="proj-desc">A production-grade Library Management System built with Node.js and Express, implementing a complete RESTful API with CRUD operations for books, members, and transactions. Features a clean backend architecture, a responsive frontend UI, and is deployed live to the cloud — demonstrating disciplined API design and the full development-to-deployment pipeline.</p>
+      <div class="proj-techs">
+        <span class="ptag">Node.js</span><span class="ptag">Express.js</span>
+        <span class="ptag">REST API</span><span class="ptag">CRUD</span>
+        <span class="ptag">JavaScript</span><span class="ptag">Frontend UI</span>
+        <span class="ptag">Cloud Deployment</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="hr"><div class="hr-line"></div></div>
+
+<!-- ── RESEARCH ── -->
+<div class="wrap" id="research">
+  <div class="sh">
+    <div><div class="sh-tag">Research</div><h2 class="sh-title rv">Academic<br><em>work.</em></h2></div>
+    <div class="sh-n rv d1">05</div>
+  </div>
+  <div class="paper rv d1">
+    <div class="paper-l">
+      <div>
+        <div class="p-venue">📄 Research Paper · Seshadripuram College</div>
+        <div class="p-title">Deepfake Technology: Threats, Detection, and Prevention</div>
+      </div>
+      <div class="p-auth">Alfiya Baig · Seshadripuram College, Bengaluru</div>
+    </div>
+    <div class="paper-r">
+      <div class="pr-lbl">Abstract</div>
+      <p class="pr-abs">A comprehensive review of deepfake technology — AI-generated synthetic media using GANs and autoencoders — examining how these techniques have evolved, why detection is increasingly difficult, and what can be done to counter misuse. Evaluates current deep-learning detection methods and emerging multi-modal verification approaches, while addressing the ethical, legal, and societal dimensions of the problem.</p>
+      <div class="pr-lbl">Keywords</div>
+      <div class="pr-kws">
+        <span class="pkw">Deepfake</span><span class="pkw">GANs</span>
+        <span class="pkw">Autoencoders</span><span class="pkw">AI Ethics</span>
+        <span class="pkw">Detection</span><span class="pkw">Cybersecurity</span>
+        <span class="pkw">Misinformation</span><span class="pkw">Deep Learning</span>
+      </div>
+      <div class="pr-lbl">Topics</div>
+      <div class="topics">
+        <div class="topic"><div class="topic-ico">🔍</div><div><div class="topic-t">Detection Techniques</div><div class="topic-s">Deep learning &amp; multi-modal verification</div></div></div>
+        <div class="topic"><div class="topic-ico">⚖️</div><div><div class="topic-t">Ethics &amp; Legal Frameworks</div><div class="topic-s">Responsible AI &amp; regulatory approaches</div></div></div>
+        <div class="topic"><div class="topic-ico">🛡️</div><div><div class="topic-t">Prevention Strategies</div><div class="topic-s">Secure verification &amp; public awareness</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hr"><div class="hr-line"></div></div>
+
+<!-- ── CONTACT ── -->
+<div class="wrap" id="contact">
+  <div class="sh">
+    <div><div class="sh-tag">Contact</div><h2 class="sh-title rv">Let's build<br><em>together.</em></h2></div>
+    <div class="sh-n rv d1">06</div>
+  </div>
+  <div class="contact-split">
+    <div class="rv d1">
+      <p class="c-intro">Whether you have a project to collaborate on, an opportunity to discuss, or simply want to connect — I am always open to a conversation. I respond promptly and take every outreach seriously.</p>
+      <div class="c-ebox"><div class="cico">✉</div><div><div class="c-lbl">Email</div><div class="c-val">alfiyabaig05@gmail.com</div></div></div>
+      <div class="soc" style="margin-top:0">
+        <a href="https://www.linkedin.com/in/alfiya-baig-411406347" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/alfiyabaig29" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="cf rv d2">
+      <div class="cf-ttl">Send a message</div>
+      <div class="cf-row"><input class="cfi" type="text" id="cfn" placeholder="Your name"></div>
+      <div class="cf-row"><input class="cfi" type="email" id="cfe" placeholder="Your email address"></div>
+      <div class="cf-row"><textarea class="cfi" id="cfm" placeholder="Your message..."></textarea></div>
+      <button class="btn-send" onclick="
+        const n=document.getElementById('cfn').value;
+        const e=document.getElementById('cfe').value;
+        const m=document.getElementById('cfm').value;
+        window.location.href='mailto:alfiyabaig05@gmail.com?subject=Portfolio Enquiry from '+encodeURIComponent(n)+'&body='+encodeURIComponent(m+'\n\nFrom: '+e);
+      ">Send Message →</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <span>© 2025 Alfiya Baig</span>
+  <div style="display:flex;gap:1.2rem">
+    <a href="https://www.linkedin.com/in/alfiya-baig-411406347" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/alfiyabaig29" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:alfiyabaig05@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
