@@ -47,6 +47,16 @@ PORTFOLIO/
 | Contact | Email + message form |
 
 
+##  How to Run Locally
+
+1. Open the project folder in VS Code
+2. Make sure the **Live Server** extension is installed
+3. Right-click on `index.html` and select **Open with Live Server**
+4. The project will open in your browser at `http://127.0.0.1:5500`
+
+> Ensure `index.html`, `style.css`, and `script.js` are in the same folder.
+
+
 ## Contact
 
 -  Email — alfiyabaig05@gmail.com
